@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProjectApiService } from '../projectApi.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -8,5 +10,19 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css',
 })
 export class ProductComponent {
-  a = 10;
+  id = 0;
+  data: any = {};
+
+  constructor(
+    private route: ActivatedRoute,
+    private service: ProjectApiService
+  ) {
+    this.id = this.route.snapshot.params['id'];
+  }
+
+  ngOnInit(): void {
+    this.service.getDetail(this.id).subscribe((res) => {
+      this.data = res;
+    });
+  }
 }

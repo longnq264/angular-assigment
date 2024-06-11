@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-root',
   standalone: true,

@@ -1,0 +1,24 @@
+<div class="dashboard-admin container mx-auto px-20 mb-40">
+  <a href="dashboard"
+    ><h1 class="text-3xl font-bold text-center my-5">Welcome to Admin</h1></a
+  >
+  <div class="grid grid-cols-2 my-5">
+    <button
+      class="bg-stone-500 hover:bg-stone-600 border-2 py-2 rounded-lg font-bold text-white mx-2"
+      routerLink="list"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      List products
+    </button>
+    <button
+      class="cursor-pointer bg-stone-500 hover:bg-stone-600 border-2 py-2 rounded-lg font-bold text-white mx-2"
+      routerLink="create"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Create new product
+    </button>
+  </div>
+  <router-outlet></router-outlet>
+</div>

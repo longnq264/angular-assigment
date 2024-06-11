@@ -1,1 +1,27 @@
-<p>product works!</p>
+<div class="container mx-auto px-10">
+  <h1 class="text-center text-bold text-2xl my-10">Product Detail</h1>
+  <div class="product grid grid-cols-2">
+    <div class="image-product">
+      <img src="{{ data.main_image_url }}" alt="" />
+    </div>
+    <div class="content">
+      <h1 class="text-2xl my-4">{{ data.name }}</h1>
+      <p class="my-2">
+        Categories: <a href="#">{{ data.description }}</a>
+      </p>
+      <div class="price">
+        <p class="text-bold">
+          Price: {{ data.price }}
+          <span class="text-stone-400 line-through">{{ data.price_old }}</span>
+        </p>
+      </div>
+      <div class="add-to-cart">
+        <button
+          class="border-2 py-2 w-full bg-stone-500 text-white font-bold rounded-lg my-5"
+        >
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

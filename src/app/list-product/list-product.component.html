@@ -1,0 +1,16 @@
+<main class="product-list">
+  <div class="container mx-auto">
+    <h1 class="my-5 text-center text-xl font-bold">Product Us</h1>
+    <div class="grid grid-cols-2 lg:grid-cols-4">
+      @for(p of listProducts; track p.id) {
+      <a [routerLink]="['/products', p.id]">
+        <div class="mx-5">
+          <img src="../../assets/product1.png" alt="" />
+          <h1>{{ p.name }}</h1>
+          <p>{{ p.price }}</p>
+        </div>
+      </a>
+      }
+    </div>
+  </div>
+</main>
