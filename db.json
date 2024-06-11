@@ -159,7 +159,23 @@
       "id": 1
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$Bhket./rBHjIG6ZCkydrgOd9.Cb/fHLefbjA4c7sp.w4SdKJFiKNi",
+      "id": 1
+    },
+    {
+      "email": "Admin@264",
+      "password": "$2a$10$7M8FUcUjrr1rW/k0yjrfqulbIhn4DZwWQSE85gO8RfsflXjvoMbZS",
+      "id": 2
+    },
+    {
+      "email": "Admin@2622",
+      "password": "$2a$10$yiaz77.j9OfUBc.qnQj0b.WCZhaMh2pWVwTPYtbpPE4gghYS5m8D2",
+      "id": 3
+    }
+  ],
   "register": [],
   "signup": []
 }
